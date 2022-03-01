@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="images/logo-medical.png" />
+        <nav>
+          <i class="fas fa-bars mobile"></i>
+          <ul class="ul">
+            <li><a href="index.html" target="_blank">HOME</a></li>
+            <li><a href="about.html" target="_blank">ABOUT US</a></li>
+            <li><a href="depart.html" target="_blank">DEPARTMENTS</a></li>
+            <li><a href="contact.html" target="_blank">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start heading -->
+    <div class="heading">
+      <div class="container">
+        <div class="text">
+          <h1>Contact</h1>
+          <p>Send us a message or call us for more information</p>
+        </div>
+        <a href="index.html" target="_blank">HOME</a>
+      </div>
+    </div>
+    <!-- end heading -->
+    <!-- start icons -->
+    <div class="icons">
+      <div class="container">
+        <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="text">
+            <h3>Address</h3>
+            <p>
+              123 Porto Blvd, Suite 100<br />
+              New York, NY
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-phone-alt"></i>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>
+              123-456-7890<br />
+              123-456-7891
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <i class="far fa-envelope"></i>
+          <div class="text">
+            <h3>Email</h3>
+            <p>mail@example.commail@example.com</p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- end icons -->
+    <div class="form">
+      <div class="container">
+        <!-- <img src="images/map.png" /> -->
+        <div id="map"></div>
+        <form>
+          <h2>Send a Message to Us</h2>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your E-mail" />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="box">
+          <h3>Location</h3>
+          <p>Porto Medical</p>
+          <p>123 Porto Blvd, Suite 100</p>
+          <p>New York, NY</p>
+          <p>Phone : 123-456-7890</p>
+        </div>
+        <div class="box">
+          <h3>Opening Hours</h3>
+          <p>Mon-Fri <span> : 30 am to 5:00 pm</span></p>
+          <p>Saturday <span> : 9:30 am to 1:00 pm</span></p>
+          <p>Sunday <span> : Closed</span></p>
+        </div>
+        <div class="box">
+          <h3>Emergency Cases</h3>
+          <p style="font-size: 24px">(800)123-4567</p>
+        </div>
+        <div class="box">
+          <h3>Social Media</h3>
+          <i class="fab fa-facebook-square" style="color: #3b5a9a"></i>
+          <i class="fab fa-twitter-square" style="color: #1aa9e1"></i>
+          <i class="fab fa-linkedin" style="color: #0073b2"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <div class="deep">&copy; copyright 2021. All Rights Reserved.</div>
+    <span class="up show"><i class="fas fa-chevron-up"></i></span>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

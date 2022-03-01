@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.up {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(64, 64, 64, 0.75);
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 40px;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.up:hover {
+  color: #008fe2;
+}
+
+.show {
+  display: inline;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .container {
+    width: 350px;
+  }
+}
+
+/* small screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 1px 20px 0 rgb(46 61 73 / 20%);
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #2d529f;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header ul a:hover {
+  background-color: #2d529f;
+  color: #fff;
+}
+
+header i {
+  color: #fff;
+  background-color: #008fe2;
+  padding: 11px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 20px 0 rgb(46 61 73 / 20%);
+}
+
+@media (max-width: 767px) {
+  header nav ul {
+    display: none;
+  }
+  header nav ul li {
+    padding: 15px;
+  }
+  header nav ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+}
+
+@media (min-width: 768px) {
+  header nav .mobile {
+    display: none;
+  }
+}
+
+.heading {
+  background-color: #008fe2;
+  padding: 105px 0 25px;
+  color: #fff;
+}
+
+.heading .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading .text h1 {
+  font-weight: normal;
+  letter-spacing: -2px;
+}
+
+.heading a {
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.heading a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .heading .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.talk {
+  padding: 60px 0;
+}
+
+.talk .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.talk .container .text {
+  width: 60%;
+}
+
+.talk .container .text h1 {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.talk .container .text p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.talk .container .text p:first-of-type {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.talk .container .text p:last-of-type {
+  padding: 20px 0 40px;
+}
+
+.talk .container .images {
+  text-align: center;
+}
+
+.talk .container .images h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #008fe2;
+}
+
+.talk .container .images p {
+  color: #777;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .talk .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .talk .container .text {
+    width: 100%;
+  }
+}
+
+.end {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+
+.end .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.end .container .text h2 {
+  font-weight: 600;
+}
+
+.end .container .text p {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px;
+  color: #777;
+}
+
+.end .container button {
+  border: none;
+  color: #fff;
+  background-color: #008fe2;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .end .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .end button {
+    margin-top: 10px;
+  }
+}
+
+footer {
+  padding: 60px 0;
+  background-color: #343a40;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+footer .container .box h3 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 23px;
+  padding-bottom: 15px;
+}
+
+footer .container .box p {
+  color: #777;
+}
+
+footer .container .box p span {
+  color: #fff;
+}
+
+footer .container .box i {
+  background-color: #fff;
+  font-size: 28px;
+}
+
+.deep {
+  background-color: #343a40;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid #53585e;
+  color: #777;
+}
+/*# sourceMappingURL=about.css.map */
